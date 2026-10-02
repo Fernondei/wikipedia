@@ -1,37 +1,78 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Réplica Web - Proyecto</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UVGpedia</title>
+  <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <!-- Encabezado y Navegación -->
-    <header class="header">
-        <nav class="nav-bar">
-            <a href="#" class="logo">MiSitio</a>
-            <ul class="nav-links">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <!-- Contenido Principal -->
-    <main>
-        <section id="inicio" class="hero-section">
-            <h1>Bienvenido a la réplica web</h1>
-        </section>
-    </main>
+  <!-- ======================================================
+       Radios ocultos: controlan qué articulo se muestra.
+       Tanto el sidebar como el buscador (dropdown) usan
+       labels "for" apuntando a estos mismos radios, por eso
+       ambos controlan lo mismo sin usar JavaScript.
+       ====================================================== -->
+  <input type="radio" name="tema" id="tema1" class="oculto" checked>
+  <input type="radio" name="tema" id="tema2" class="oculto">
+  <input type="radio" name="tema" id="tema3" class="oculto">
+  <input type="radio" name="tema" id="tema4" class="oculto">
+  <input type="radio" name="tema" id="tema5" class="oculto">
+  <input type="radio" name="tema" id="tema6" class="oculto">
+  <input type="radio" name="tema" id="tema7" class="oculto">
+  <input type="radio" name="tema" id="tema8" class="oculto">
+  <input type="radio" name="tema" id="tema9" class="oculto">
+  <input type="radio" name="tema" id="tema10" class="oculto">
+  <!-- Checkbox oculto: abre/cierra el dropdown del buscador -->
+  <input type="checkbox" id="toggle-buscador" class="oculto">
 
-    <!-- Pie de Página -->
-    <footer class="footer">
-        <p>&copy; 2026 - Proyecto Académico ITEC-UVG</p>
-    </footer>
-</body>
-</html>
+  <!-- Checkbox oculto: abre/cierra el sidebar de temas -->
+  <input type="checkbox" id="toggle-sidebar" class="oculto">
 
-git clone https://github.com/usuario-lider/proyecto-replica-web.git
-cd proyecto-replica-web
+  <!-- ======================================================
+       Encabezado: logo + titulo, y el buscador (dropdown)
+       ====================================================== -->
+  <header>
+    <div class="marca">
+      <div class="logo">U</div>
+      <div class="titulo-texto">
+        <h1>UVGpedia</h1>
+        <p>La enciclopedia libre (de práctica)</p>
+      </div>
+    </div>
+    <div class="buscador">
+      <label for="toggle-buscador" class="buscador-caja">Buscar en UVGpedia</label>
+      <label for="toggle-buscador" class="buscador-boton">Buscar</label>
+
+      <div class="buscador-opciones">
+        <label for="tema1">Cultura japonesa</label>
+        <label for="tema2">El anime</label>
+        <label for="tema3">La Segunda Guerra Mundial</label>
+        <label for="tema4">La Primera Guerra Mundial</label>
+        <label for="tema5">La música electrónica</label>
+        <label for="tema6">El dibujo digital</label>
+        <label for="tema7">Estado de Ohio, Estados Unidos</label>
+        <label for="tema8">País de Guatemala</label>
+        <label for="tema9">Brainrot</label>
+        <label for="tema10">El trash metal</label>
+      </div>
+    </div>
+    
+    <div class="buscador">
+      <label for="toggle-buscador" class="buscador-caja">Buscar en UVGpedia</label>
+      <label for="toggle-buscador" class="buscador-boton">Buscar</label>
+
+      <div class="buscador-opciones">
+        <label for="tema1">Cultura japonesa</label>
+        <label for="tema2">El anime</label>
+        <label for="tema3">La Segunda Guerra Mundial</label>
+        <label for="tema4">La Primera Guerra Mundial</label>
+        <label for="tema5">La música electrónica</label>
+        <label for="tema6">El dibujo digital</label>
+        <label for="tema7">Estado de Ohio, Estados Unidos</label>
+        <label for="tema8">País de Guatemala</label>
+        <label for="tema9">Brainrot</label>
+        <label for="tema10">El trash metal</label>
+      </div>
+    </div>
